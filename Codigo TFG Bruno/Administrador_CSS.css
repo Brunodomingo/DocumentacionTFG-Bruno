@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap");
+
+@media screen {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px 5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .imagen_header img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+  }
+
+  .usuario_info {
+    display: flex;
+    align-items: center;
+  }
+
+  .usuario_info .welcome_message {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #333333;
+  }
+
+  .icons svg {
+    margin-right: 10px;
+    cursor: pointer;
+    fill: #d8020e;
+    transition: fill 0.3s ease;
+  }
+
+  section {
+    padding: 20px 5%;
+  }
+
+  .cuerpo_principal {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  footer {
+    background-color: white;
+    padding: 20px 5%;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #eeeeee;
+    margin-top: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 20px 3%;
+  }
+
+  .usuario_info .welcome_message {
+    display: none; /* Ocultar el mensaje de bienvenida en pantallas pequeñas */
+  }
+
+  .icons svg {
+    margin-right: 5px;
+  }
+
+  footer {
+    padding: 20px 3%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .imagen_header {
+    padding-left: 20px;
+  }
+
+  .icons {
+    padding-right: 20px;
+  }
+}
